@@ -55,13 +55,26 @@ end
 def runner
   welcome
   card_total = initial_round
+<<<<<<< HEAD
   
   loop do
     card_total = hit?(card_total)
     display_card_total(card_total)
+=======
+  binding.pry
+  
+  loop do
+    card_total
+    hit?(card_total)
+>>>>>>> b7e1f14af68a1df530d0cab192121c51a716a07c
     if card_total > 21
       break
     end
   end
   end_game(card_total)
+<<<<<<< HEAD
 end  
+=======
+end
+    
+>>>>>>> b7e1f14af68a1df530d0cab192121c51a716a07c
